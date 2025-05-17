@@ -65,27 +65,27 @@
     const tones = {
       stillwater: {
         color: '#a3cbe0',
-        text: "The cabin fills gently with waterlight. You're floating in Stillwater.",
+        text: "The cabin fills gently with waterlight. You're floating in Stillwater. [Soundscape not yet present—room is holding silence.]",
         audio: 'assets/audio/inner-peace.mp3'
       },
       echolight: {
         color: '#c7bbb0',
-        text: "Echoes hum from the old radio. You're in Echolight.",
+        text: "Echoes hum from the old radio. You're in Echolight. [Soundscape not yet present—room is holding silence.]",
         audio: 'assets/audio/ambient-wandering-wind.mp3'
       },
       cinder: {
         color: '#a85632',
-        text: "The firelight glows around you. You're in Cinder.",
+        text: "The firelight glows around you. You're in Cinder. [Soundscape not yet present—room is holding silence.]",
         audio: 'assets/audio/campfire-crackling.mp3'
       },
       rift: {
         color: '#706b80',
-        text: "The bookshelf is torn and contradictory. You're in Rift.",
+        text: "The bookshelf is torn and contradictory. You're in Rift. [Soundscape not yet present—room is holding silence.]",
         audio: 'assets/audio/ambient-drone.mp3'
       },
       blank: {
         color: '#ffffff',
-        text: "The back door opens to white quiet. You're in Blank.",
+        text: "The back door opens to white quiet. You're in Blank. [Soundscape not yet present—room is holding silence.]",
         audio: 'assets/audio/silence.mp3'
       }
     };
@@ -95,7 +95,7 @@
         document.body.style.backgroundColor = tones[tone].color;
         room.innerText = tones[tone].text;
         ambience.src = tones[tone].audio;
-        ambience.play();
+        ambience.play().catch(() => {});
       }
     }
   </script>
