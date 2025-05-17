@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Cabin</title>
+  <style>
+    body { margin: 0; font-family: Georgia, serif; transition: background-color 1s; color: #fff; text-align: center; padding: 3em; }
+    #room { height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background-color: #333; transition: background-color 1s; margin-bottom: 2em; }
+    .tone-button { padding: 1em; margin: 0.5em; border: none; font-size: 1em; border-radius: 6px; cursor: pointer; }
+    .nav { margin-top: 2em; }
+  </style>
+</head>
+<body>
+  <h1>Inside the Clarity Loft</h1>
+  <div id="room">The room shifts as your mood shifts...</div>
+  <button class="tone-button" onclick="setTone('stillwater')">Look out the window (Stillwater)</button>
+  <button class="tone-button" onclick="setTone('echolight')">Turn on the radio (Echolight)</button>
+  <button class="tone-button" onclick="setTone('cinder')">Sit by the fire (Cinder)</button>
+  <button class="tone-button" onclick="setTone('rift')">Approach the bookshelf (Rift)</button>
+  <button class="tone-button" onclick="setTone('blank')">Open the back door (Blank)</button>
+  <div class="nav">
+    <a href="draft.html">Go to the Writing Table</a> | <a href="start.html">Prepare to Build Your Own</a>
+  </div>
+  <script>
+    function setTone(tone) {
+      const room = document.getElementById('room');
+      const tones = {
+        stillwater: ["#a3cbe0", "The cabin fills gently with waterlight. You're floating in Stillwater."],
+        echolight: ["#c7bbb0", "Echoes hum from the old radio. You're in Echolight."],
+        cinder: ["#a85632", "The firelight glows around you. You're in Cinder."],
+        rift: ["#706b80", "The bookshelf is torn and contradictory. You're in Rift."],
+        blank: ["#ffffff", "The back door opens to white quiet. You're in Blank."]
+      };
+      if (tones[tone]) {
+        document.body.style.backgroundColor = tones[tone][0];
+        room.innerText = tones[tone][1];
+      }
+    }
+  </script>
+</body>
+</html>
