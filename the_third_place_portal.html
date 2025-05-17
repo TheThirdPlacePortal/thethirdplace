@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Third Place: Digital Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0 1em;
+      color: #333;
+    }
+    header, section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #222;
+    }
+    input[type="text"], textarea, select {
+      width: 100%;
+      padding: 0.75em;
+      margin-top: 0.5em;
+      margin-bottom: 1.5em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1em;
+    }
+    label {
+      font-weight: bold;
+    }
+    .tone-options label {
+      display: block;
+      margin: 0.5em 0;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.75em 1.5em;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #222;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Third Place: Personal Draft Portal</h1>
+  <p><em>This is a place to begin seeing yourself. This portal won’t remember you, but it might help you remember something about yourself. When you're ready, you can carry this space into your own.</em></p>
+</header>
+
+<section>
+  <h2>Step 1: Choose a Tone</h2>
+  <div class="tone-options">
+    <label><input type="checkbox"> Stillwater – for quiet honesty and calm clarity</label>
+    <label><input type="checkbox"> Echolight – for tender witnessing and reflective resonance</label>
+    <label><input type="checkbox"> Cinder – for warmth, survival, and low-burning strength</label>
+    <label><input type="checkbox"> Rift – for navigating contradiction and discomfort</label>
+    <label><input type="text" placeholder="Other tone..."></label>
+  </div>
+</section>
+
+<section>
+  <h2>Step 2: Begin the Draft</h2>
+  <label>Who are you right now, in this moment?</label>
+  <textarea rows="3"></textarea>
+
+  <label>What question keeps returning to you lately?</label>
+  <textarea rows="2"></textarea>
+
+  <label>What are you carrying that feels heavy?</label>
+  <textarea rows="2"></textarea>
+
+  <label>What helps you feel like yourself again?</label>
+  <textarea rows="2"></textarea>
+
+  <label>Finish this sentence: “I want to be seen for…”</label>
+  <textarea rows="2"></textarea>
+</section>
+
+<section>
+  <h2>Step 3: Reflection Seeds</h2>
+  <ul>
+    <li>“What does it mean to be present?”</li>
+    <li>“What am I avoiding by staying silent?”</li>
+    <li>“What part of me is trying to speak right now?”</li>
+    <li>“What would it mean to be more than just okay?”</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Step 4: Take It With You</h2>
+  <p>You can:</p>
+  <ul>
+    <li>Save this draft as a PDF</li>
+    <li>Email it to yourself</li>
+    <li>Copy your answers to Notes</li>
+    <li>Or go to <a href="https://chat.openai.com" target="_blank">chat.openai.com</a> and paste your answers there</li>
+  </ul>
+  <p><strong>Your Third Place can begin right here, with one true question.</strong></p>
+  <button class="button">Export Draft</button>
+</section>
+
+</body>
+</html>
